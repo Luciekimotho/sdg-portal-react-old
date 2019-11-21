@@ -1,3 +1,8 @@
 .navbar-brand img {
-  height: 30px;
+  height: 70px;
+}
+.btn{
+  letter-spacing: 0;
+  border: 0px solid transparent;
+  padding: 0.6rem 18px;
 }

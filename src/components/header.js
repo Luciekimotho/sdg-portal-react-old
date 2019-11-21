@@ -1,5 +1,9 @@
 import React from "react";
-import { BrowserRouter, Link} from 'react-router-dom'
+import {
+     BrowserRouter as Router, 
+     Link
+
+} from 'react-router-dom'
 
 // reactstrap components
 import {
@@ -23,11 +27,10 @@ class Header extends React.Component{
         return (
             <> 
             <header className="header-global">
-                <Navbar className="navbar-main navbar-transparent navbar-light headroom" expand="lg" id="navbar-main">
-                    <Container>
-                        
+                <Navbar className="navbar-main navbar-transparent navbar-light" expand="lg" id="navbar-main">
+        
                         <NavbarBrand>
-                            <img alt="..." src={require("../assets/img/brand/logo.png")}></img>
+                            <img alt="..." src={require("../assets/img/brand/logo_white.png")}></img>
                         </NavbarBrand>
                         <button className="navbar-toggler" id="navbar_global">
                             <span className="navbar-toggler-icon" />
@@ -37,14 +40,14 @@ class Header extends React.Component{
                             <div className="navbar-collapse-header">
                                 <Row>
                                     <Col className="collapse-brand" xs="6">
-                                    <BrowserRouter>
+                                    <Router>
                                     <Link to="/">
                                         <img
                                         alt="..."
                                         src={require("../assets/img/brand/logo.png")}
                                         />
                                     </Link>
-                                    </BrowserRouter>
+                                    </Router>
                                     </Col>
                                     <Col className="collapse-close" xs="6">
                                     <button className="navbar-toggler" id="navbar_global">
@@ -54,59 +57,60 @@ class Header extends React.Component{
                                     </Col>
                                 </Row>
                             </div>
+                            <Router>
                             <Nav className="ml-lg-auto" navbar>
                                 <NavItem>
-                                    <Button className="btn-icon" color="warning" href="#!" target="_blank">
-                                            <span className="btn-inner--icon"><i className="fa fa-home mr-2" /></span>
-                                            <br></br>
-                                            <span className="nav-link-inner--text ml-1">Home</span>
+                                    <Button className="btn-icon" color="warning">
+                                            <span className="nav-link-inner--text ml-1">
+                                                <Link to="/Home" className="text-white">Home</Link>
+                                            </span>
                                         </Button>
                                 </NavItem>
                                 <NavItem>
-                                    <Button className="btn-icon" color="warning" href="#!" target="_blank">
-                                            <span className="btn-inner--icon"><i className="fa fa-cloud-download mr-2" /></span>
-                                            <br></br>
-                                            <span className="nav-link-inner--text ml-1">SDGS</span>
+                                    <Button className="btn-icon" color="warning">
+                                            <span className="nav-link-inner--text ml-1">
+                                                <Link to="/Sdgs" className="text-white">SDGS</Link></span>
                                         </Button>
                                 </NavItem>
                                 <NavItem>
-                                    <Button className="btn-icon" color="warning" href="#!" target="_blank">
-                                            <span className="btn-inner--icon"><i className="fa fa-table mr-2" /></span>
-                                            <br></br>
-                                            <span className="nav-link-inner--text ml-1">Dashboard</span>
+                                    <Button className="btn-icon" color="warning">
+                                            <span className="nav-link-inner--text ml-1">
+                                            <Link to="/Dashboard" className="text-white">Dashboard</Link>
+                                            </span>
                                         </Button>
                                 </NavItem>
                                 <NavItem>
-                                    <Button className="btn-icon" color="warning" href="#!" target="_blank">
-                                            <span className="btn-inner--icon"><i className="fa fa-flag mr-2" /></span>
-                                            <br></br>
-                                            <span className="nav-link-inner--text ml-1">Country <br></br> Profiles</span>
+                                    <Button className="btn-icon" color="warning">
+                                            <span className="nav-link-inner--text ml-1">
+                                            <Link to="/CountryProfile" className="text-white">Country Profile</Link>
+                                            </span>
                                         </Button>
                                 </NavItem>
                                 <NavItem>
-                                    <Button className="btn-icon" color="warning" href="#!" target="_blank">
-                                            <span className="btn-inner--icon"><i className="fa fa-globe mr-2" /></span>
-                                            <br></br>
-                                            <span className="nav-link-inner--text ml-1">Agenda <br></br> 2063</span>
+                                    <Button className="btn-icon" color="warning">
+                                            <span className="nav-link-inner--text ml-1">
+                                            <Link to="/Agenda2063" className="text-white">Agenda 2063</Link>
+                                            </span>
                                         </Button>
                                 </NavItem>
                                 <NavItem>
-                                    <Button className="btn-icon" color="warning" href="#!" target="_blank">
-                                            <span className="btn-inner--icon"><i className="fa fa-info mr-2" /></span>
-                                            <br></br>
-                                            <span className="nav-link-inner--text ml-1">About us</span>
+                                    <Button className="btn-icon" color="warning">
+                                            <span className="nav-link-inner--text ml-1">
+                                            <Link to="/About" className="text-white">About us</Link>
+                                            </span>
                                         </Button>
                                 </NavItem>
                                 <NavItem>
-                                    <Button className="btn-icon" color="warning" href="#!" target="_blank">
-                                            <span className="btn-inner--icon"><i className="fa fa-question mr-2" /></span>
-                                            <br></br>
-                                            <span className="nav-link-inner--text ml-1">FAQS</span>
+                                    <Button className="btn-icon" color="warning">
+                                            <span className="nav-link-inner--text ml-1">
+                                            <Link to="/Faqs" className="text-white">FAQS</Link>
+                                            </span>
                                         </Button>
                                 </NavItem>
                             </Nav>
+                            </Router>
                         </UncontrolledCollapse>
-                    </Container>
+                  
                 </Navbar>
             </header> 
             </>
