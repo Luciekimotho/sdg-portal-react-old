@@ -1,9 +1,19 @@
 import React from "react";
 import {
      BrowserRouter as Router, 
-     Link
-
+     Link,
+     Switch,
+     Route
 } from 'react-router-dom'
+
+import Home from "../views/Home";
+import Sdgs from "../views/Sdgs";
+import Dashboard from "../views/Dashboard";
+import CountryProfile from "../views/CountryProfile";
+import Agenda2063 from "../views/Agenda2063";
+import About from "../views/About";
+import Faqs from "../views/Faqs";
+
 
 // reactstrap components
 import {
@@ -57,12 +67,12 @@ class Header extends React.Component{
                                     </Col>
                                 </Row>
                             </div>
-                            <Router>
+                          
                             <Nav className="ml-lg-auto" navbar>
                                 <NavItem>
                                     <Button className="btn-icon" color="warning">
                                             <span className="nav-link-inner--text ml-1">
-                                                <Link to="/Home" className="text-white">Home</Link>
+                                                <Link to="/" className="text-white">Home</Link>
                                             </span>
                                         </Button>
                                 </NavItem>
@@ -108,7 +118,7 @@ class Header extends React.Component{
                                         </Button>
                                 </NavItem>
                             </Nav>
-                            </Router>
+                          
                         </UncontrolledCollapse>
                   
                 </Navbar>
