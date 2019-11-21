@@ -8,7 +8,8 @@ class Home extends React.Component {
         return(
             <>
                 <main>
-                    
+                   <div className="home">
+                       </div> 
                 </main>
                 <Footer></Footer>
             </>

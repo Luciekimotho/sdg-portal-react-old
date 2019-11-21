@@ -37,7 +37,7 @@ class Header extends React.Component{
         return (
             <> 
             <header className="header-global">
-                <Navbar className="navbar-main navbar-transparent navbar-light" expand="lg" id="navbar-main">
+                <Navbar className="navbar-main navbar-light" expand="lg" id="navbar-main">
         
                         <NavbarBrand>
                             <img alt="..." src={require("../assets/img/brand/logo_white.png")}></img>

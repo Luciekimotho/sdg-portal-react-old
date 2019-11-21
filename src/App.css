@@ -6,3 +6,7 @@
   border: 0px solid transparent;
   padding: 0.6rem 18px;
 }
+
+.home{
+  background: url("../src/assets/img/bg/trevor.jpg");
+}
