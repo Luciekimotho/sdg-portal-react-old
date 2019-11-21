@@ -10,3 +10,7 @@
 .home{
   background: url("../src/assets/img/bg/trevor.jpg");
 }
+
+.card-header {
+  padding: 0.5em 1.5rem;
+}
