@@ -11,6 +11,42 @@
   background: url("../src/assets/img/bg/trevor.jpg");
 }
 
+/* About us page */
 .card-header {
   padding: 0.5em 1.5rem;
 }
+
+.aboutCards .card{
+  height: 460px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: calc(0.25rem - 0.0625rem);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.sdgCard, .sdgCard .card-header {
+  background-color: #239bc8;
+}
+.countryProfileCard, .countryProfileCard .card-header{
+  background-color: #dc252b;
+}
+.dashboardCard, .dashboardCard .card-header{
+  background-color: #f5c11c;
+}
+.agenda2063Card, .agenda2063Card .card-header{
+  background-color: #7ebb42;
+}
+
+.card{
+  color: #ffffff;
+}
+.card-header{
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+

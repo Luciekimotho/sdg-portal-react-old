@@ -1,19 +1,8 @@
 import React from "react";
 import {
      BrowserRouter as Router, 
-     Link,
-     Switch,
-     Route
+     Link
 } from 'react-router-dom'
-
-import Home from "../views/Home";
-import Sdgs from "../views/Sdgs";
-import Dashboard from "../views/Dashboard";
-import CountryProfile from "../views/CountryProfile";
-import Agenda2063 from "../views/Agenda2063";
-import About from "../views/About";
-import Faqs from "../views/Faqs";
-
 
 // reactstrap components
 import {

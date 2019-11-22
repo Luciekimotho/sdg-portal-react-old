@@ -14,7 +14,8 @@ class About extends React.Component {
         return(
             <>
                 <main>
-                <Container>
+                <div className="container-fluid pl-5 pr-5">
+                    <Row className="pl-5 pr-5">
                     <h5 className="display-3 mb-4 mt-2 text-center">
                     Welcome to the SDG and Agenda 2063 Data Portal for Africa
                     </h5>
@@ -26,13 +27,17 @@ class About extends React.Component {
                       on where each country stands with regards to achieving the 2030 Agenda for Sustainable Development 
                       and the African Union 2063 Agenda, as well as which metrics might be useful to track progress. 
                     </p>
+                    </Row>
+                   
 
                     <h5 className="display-4 mb-4 mt-2 text-center">
                     About the Data Portal
                     </h5>
-                    <Row>
+                   
+                    
+                    <Row className="pl-5 pr-5 aboutCards">
                         <Col >
-                            <Card>
+                            <Card className="sdgCard">
                                 <CardHeader>
                                     SDGs
                                 </CardHeader>
@@ -45,7 +50,7 @@ class About extends React.Component {
                             </Card>
                         </Col>
                         <Col >
-                            <Card>
+                            <Card className="dashboardCard">
                                 <CardHeader>
                                     Dashboard
                                 </CardHeader>
@@ -59,7 +64,7 @@ class About extends React.Component {
                             </Card>
                         </Col>
                         <Col >
-                            <Card>
+                            <Card className="countryProfileCard">
                                 <CardHeader>
                                    Country Profile
                                 </CardHeader>
@@ -72,7 +77,7 @@ class About extends React.Component {
                             </Card>
                         </Col>
                         <Col >
-                            <Card>
+                            <Card className="agenda2063Card">
                                 <CardHeader>
                                 Agenda 2063
                                 </CardHeader>
@@ -84,8 +89,8 @@ class About extends React.Component {
                             </Card>
                         </Col>
                     </Row>
-                    
-                </Container>
+                    </div>
+     
                 </main>
                 <Footer></Footer>
             </>
