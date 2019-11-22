@@ -56,4 +56,12 @@
   letter-spacing: 0.05rem;
 }
 
-
+.sdg .card-img{
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 0px;
+}
+.sdg .col-md-2{
+  padding-right: 0px;
+  padding-left: 0px;
+}
