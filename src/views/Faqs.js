@@ -25,7 +25,7 @@ class Faqs extends React.Component {
         return(
             <>
              <main>
-                <Container>
+                <Container className="faqs">
                 <h3 className="display-3 mb-4 mt-2 text-center text-uppercase">Frequently Asked Questions</h3>
                     <Card key="1">
                         <CardHeader onClick={this.toggle} data-event="1">Q: What are the Sustainable Development Goals?

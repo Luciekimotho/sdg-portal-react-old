@@ -11,6 +11,13 @@
   background: url("../src/assets/img/bg/trevor.jpg");
 }
 
+
+/* FAQ Page */
+
+.faqs .card{
+  margin-bottom: 8px;
+}
+
 /* About us page */
 .card-header {
   padding: 0.5em 1.5rem;
@@ -40,10 +47,10 @@
   background-color: #7ebb42;
 }
 
-.card{
+.aboutCards .card{
   color: #ffffff;
 }
-.card-header{
+.aboutCards .card-header{
   color: #000000;
   font-weight: 600;
   letter-spacing: 0.05rem;
